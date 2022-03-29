@@ -35,6 +35,11 @@
           "http_req_duration_current"
         );
         new SimpleChart(src, { title: "Request Rate (1/s)" }, "http_reqs_rate");
+        new SimpleChart(src, { title: "Iterations" }, "iterations");
+        new SimpleChart(src, { title: "Iteration Duration" }, 
+                        "iteration_duration",
+                       "iteration_duration_95",
+                       "iteration_duration_current");
       });
     </script>
     <style>
